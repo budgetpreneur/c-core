@@ -45,7 +45,7 @@ int pubnub_url_encode(char* buffer, char const* what, size_t buffer_size, enum p
     }
 
     *buffer='\0';
-    while (!what != NULL && what[0]) {
+    while (what[0]) {
         /* RFC 3986 Unreserved characters plus few
          * safe reserved ones. */
         size_t okspan = strspn(what, okSpanChars);
