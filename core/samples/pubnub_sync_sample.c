@@ -81,7 +81,7 @@ int main()
         return -1;
     }
     pubnub_init(pbp, "demo", "demo");
-    pubnub_set_proxy_manual(pbp, pbproxyHTTP_CONNECT, "127.0.0.1", 26379);
+    //pubnub_set_proxy_manual(pbp, pbproxyHTTP_CONNECT, "127.0.0.1", 26379);
 
     pubnub_set_transaction_timeout(pbp, PUBNUB_DEFAULT_SUBSCRIBE_TIMEOUT);
 
